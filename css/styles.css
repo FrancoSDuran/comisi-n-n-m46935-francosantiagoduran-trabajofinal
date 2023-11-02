@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900 & display = intercambio');
+/**font-family: 'Roboto'; sans-serif;*/
+
+header{
+    background-color: #2c2c2c;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .625rem 1.25rem;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    padding-right: 3.125rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+}
+header a img{
+width: 60%;
+}
+
+.mainIndex{
+    background-color: black;
+    width: 100%;
+    height: 40.625rem;
+    font-family: 'Roboto', sans-serif;
+    background-image:url(../assets/img/fondo-pro.jpg);
+    background-position: 100%;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 6.25rem 1fr 1fr;
+    grid-template-areas:
+    "item1 item1 item1 item1"
+    "redSo titulo titulo titulo"
+    "redSo conoce conoce conoce"
+    ;
+    justify-content: center;
+}
+.presentacionMia{
+    grid-area: titulo;
+}
+.botonConoce{
+    grid-area: conoce;
+    display: flex;
+    align-items: start;
+    margin: 0rem 2.5rem;
+    justify-content: right;
+    padding: 0rem;
+}
+.redesPricipal{
+    grid-area: redSo;
+}
+.vacio{
+grid-area: item1;
+}
+.botonConoce button{
+    background-color: #BF0413;
+    padding: .625rem 1.875rem;
+    border: none;
+    margin: .3125rem 1.25rem;
+    border-radius: .625rem;
+}
+.botonConoce button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+.presentacionMia div h2{
+    background-color: #BF0413;
+    width: 60%;
+    padding: 1.25rem;
+    margin: 0rem 6.25rem 0rem -5rem;
+    font-size: 2.5rem;
+}
+.presentacionMia div h1{
+    margin: 0rem 6.25rem 0rem -5rem;
+    font-size: 5.625rem;
+}
+.mainIndex section ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.875rem;
+    gap: 3.125rem;
+}
+.mainIndex section ul li a img{
+    width: 2.5rem;
+}
+
+.mainSobreMi{
+    background-color: #262626;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "grup1"
+    "grup2"
+    "grup3";
+    justify-content: left;
+}
+.tituloUno{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin: 3.125rem 12.5rem;
+    grid-area: grup1;
+}
+.tituloUno div p{
+    width: 37.5rem;
+    font-size: 1.25rem;
+    margin: 1.25rem 1.875rem;
+}
+.tituloDos{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin: 3.125rem 12.5rem;
+    grid-area: grup2;
+}
+.tituloDos div dl{
+    width: 37.5rem;
+    font-size: 1.25rem;
+    margin: 1.25rem 1.875rem;
+}
+.tituloTres{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin: 3.125rem 12.5rem;
+    grid-area: grup3;
+}
+.tituloTres div p{
+    width: 37.5rem;
+    font-size: 1.25rem;
+    margin: 1.25rem 1.875rem;
+}
+.tituloTres div h3{
+        width: 37.5rem;
+        font-size: 1.25rem;
+        margin: 1.25rem 1.875rem;
+}
+.mainSobreMi section div h2 {
+    background-color: #BF0413;
+    width: 90%;
+    padding: 1.25rem;
+    margin: 4rem -6rem;
+    font-size: 2.1875rem;
+}
+.imagenesSobreMi img{
+    width: 31.25rem;
+}
+
+main{
+    background-color: #262626;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+main section{
+    padding: 3.5rem 0rem 0rem 0rem;
+}
+main section div p{
+    padding: 2rem 4rem;
+}
+main section div h2{
+    background-color: #BF0413;
+    width: 50%;
+    padding: 1.25rem;
+    margin: 0rem 4rem;
+    font-size: 2.1875rem;
+}
+main section div h1{
+    font-size: 3.125rem;
+}
+.botonAtras button{
+    background-color: black;
+    padding: 1.5625rem .0625rem;
+    border: none;
+    margin: .625rem .9375rem;
+    border-radius: 1.25rem;
+}
+.botonAtras button a img{
+    width: 30%;
+}
+
+.misProyectos div h2{
+    background-color: #BF0413;
+    width: 20%;
+    padding: 1.25rem;
+    margin: 0rem 4rem;
+    font-size: 1.5625rem;
+}
+article {
+    width: 25rem;
+    height: 29.6875rem;
+    background-color: white;
+    margin: 40px;
+    border-radius: .625rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px gray;
+    color: black
+    }
+    article div{
+        width: 100%;
+        height: 18.75rem;
+        object-fit: contain;
+    }
+    article div img{
+        width: 100%;
+        height: 100%;
+    }
+    article button{
+        background-color: #BF0413;
+        font-family: 'Roboto', sans-serif;
+        padding: .625rem 1.875rem;
+        border: none;
+        margin: .3125rem 1.25rem;
+        border-radius: .625rem;
+    }
+    article button a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: medium;
+    }
+.cardContenedor article h3{
+    font-family: 'Roboto', sans-serif;
+    padding: .3125rem;
+    margin: .25rem;
+    background-color: black;
+    color: white;
+}
+.cardContenedor article p{
+    font-family: 'Roboto', sans-serif;
+    padding: .1875rem;
+    margin: .25rem;
+}
+.cardContenedor{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgProyecto img{
+    width: 30%;
+}
+
+.contactaMe{
+    width: 56.25rem;
+    margin: auto;
+    padding: .625rem 1.25rem;
+    box-sizing: border-box;
+    margin-top: 1.25rem;
+}
+.contactaMe form label{
+    font-size: 1.25rem;
+    margin: .625rem;
+}
+.contactaMe form input{
+width: 100%;
+margin: .625rem .625rem 1.25rem;
+padding: .4375rem;
+box-sizing: border-box;
+}
+.texto{
+height: 18.75rem;
+}
+.boton{
+    background-color: #BF0413;
+    font-family: 'Roboto', sans-serif;
+    padding: .625rem 1.875rem;
+    border: none;
+    margin: .3125rem 1.25rem;
+    border-radius: .625rem;
+    color: white;
+    font-size: medium;
+}
+
+footer{
+    background-color: #BF0413;
+    width: 100%;
+    height: 7.1875rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0rem 2.5rem;
+}
+footer section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoPie a img{
+    width: 90%;
+    padding: 1.25rem;
+}
+footer section div a img{
+    width: 2.5rem;
+}
+.redesSociales{
+    display: flex;
+    list-style: none;
+    gap: .625rem;
+    padding-right: .625rem;
+}
