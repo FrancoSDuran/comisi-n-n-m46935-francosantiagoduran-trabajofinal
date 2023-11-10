@@ -116,12 +116,12 @@ grid-area: item1;
     "grup1"
     "grup2"
     "grup3";
-    justify-content: left;
+    justify-content: center;
 }
 .tituloUno{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: left;
+    justify-content: center;
     margin: 3.125rem 12.5rem;
     grid-area: grup1;
 }
@@ -138,7 +138,7 @@ grid-area: item1;
 .tituloDos{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: left;
+    justify-content: center;
     margin: -4.5rem 12.5rem;
     grid-area: grup2;
 }
@@ -155,7 +155,7 @@ grid-area: item1;
 .tituloTres{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: left;
+    justify-content: center;
     margin: -4rem 12.5rem 2rem;
     grid-area: grup3;
 }
@@ -173,7 +173,7 @@ grid-area: item1;
     background-color: #BF0413;
     width: 90%;
     padding: 1.25rem;
-    margin: 4rem -6rem 2rem;
+    margin: 4rem 2rem;
     font-size: 2.1875rem;
 }
 .imagenesSobreMi img{
@@ -275,8 +275,65 @@ article {
     align-items: center;
 }
 
-.imgProyecto img{
+.tituloKamila div h1{
+padding: 0rem 0rem 0rem 3.5rem;
+}
+.paletaColor{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.paletaColor div img{
+    width: 100%;
+    padding: 0rem 0rem 0rem 3rem;
+}
+.tipoK{
+    display: flex;
+    justify-content: center;
+}
+.tipoK div img{
+    width: 25rem;
+    padding: 0rem 3rem 0rem 0rem;
+}
+.logoK{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.logoK div img{
+    width: 25rem;
+    padding: 0rem 0rem 0rem 3rem;
+}
+.imgProyecto{
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 10%;
+    grid-template-rows: 55% 45%;
+    grid-template-areas: 
+    "img1 img2 img3 img3"
+    "img1 img2 img4 img4";
+    justify-content: center;
+    align-items: center;
+}
+.imgProyecto1 img{
     width: 30%;
+}
+.mockup1{
+    width: 101%;
+    grid-area: img1;
+}
+.mockup2{
+    width: 100%;
+    grid-area: img2;
+}
+.mockup3{
+    width: 100%;
+    grid-area: img3;
+}
+.mockup4{
+    width: 100%;
+    grid-area: img4;
 }
 
 .contactaMe{
@@ -334,4 +391,39 @@ footer section div a img{
     list-style: none;
     gap: .625rem;
     padding-right: .625rem;
+}
+
+.error404{
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.emojiTriste{
+    width: 20%;
+    padding: 4.5rem 0rem 0rem 0rem;
+}
+.emojiTriste img{
+    width: 100%;
+}
+.error404 div h1{
+    font-size: 6.25rem;
+    text-align: center;
+}
+.error404 div h2{
+    text-align: center;
+    color: rgb(102, 102, 102);
+}
+.error404 div p{
+    text-align: center;
+    color: rgb(102, 102, 102);
+    padding: 1.5rem 1rem 8rem 1rem;
+}
+.error404 div p button{
+    background-color: transparent;
+    padding: 0rem 0rem 0rem .3125rem;
+    font-size: .9375rem;
+    border: none;
 }
