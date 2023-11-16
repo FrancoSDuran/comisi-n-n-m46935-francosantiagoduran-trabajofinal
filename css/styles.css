@@ -189,6 +189,9 @@ grid-area: item1;
     width: 100%;
 }
 
+.mainProyectos section div p{
+    margin: 0rem 3.5rem;
+}
 main{
     background-color: #262626;
     width: 100%;
@@ -523,6 +526,16 @@ footer section div a img{
     main section{
         padding: 0rem;
     }
+
+    .mainProyectos{
+        padding: 3.5rem 1rem;
+    }
+    .mainProyectos section div h2{
+        width: 80%;
+    }
+    .mainProyectos section div p{
+        margin: 0rem 3rem;
+    }
 }
 
 @media(max-width:390px){
@@ -672,6 +685,34 @@ footer section div a img{
     main section{
         padding: 0rem;
     }
+
+    .mainProyectos{
+        padding: 3.5rem 1rem;
+    }
+    .mainProyectos section div h2{
+        width: 82%;
+        margin: 0rem 2rem;
+    }
+    main section div h2{
+        font-size: 1.5rem;
+    }
+    .mainProyectos section div p{
+        margin: 1rem 3rem;
+        font-size: .75rem;
+    }
+    article{
+        width: 25rem;
+        height: 23.6875rem;
+    }
+    article div{
+        height: 12.75rem;
+    }
+    .cardContenedor article h3{
+        font-size: 1rem;
+    }
+    .cardContenedor article p{
+        font-size: .75rem;
+    }
 }
 
 @media(max-width:320px){
@@ -771,5 +812,38 @@ footer section div a img{
     }
     .tituloTres div h3{
         font-size: .875rem;
+    }
+
+    .mainProyectos{
+        padding: 3.5rem 1rem;
+    }
+    .mainProyectos section div h2{
+        width: 82%;
+        margin: 0rem 1.5rem;
+    }
+    main section div h2{
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+    .mainProyectos section div p{
+        margin: 1rem 1rem;
+        font-size: .75rem;
+    }
+    .misProyectos div h2{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    article{
+        width: 25rem;
+        height: 20.4rem;
+    }
+    article div{
+        height: 8.75rem;
+    }
+    .cardContenedor article h3{
+        font-size: .875rem;
+    }
+    .cardContenedor article p{
+        font-size: .75rem;
     }
 }
