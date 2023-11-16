@@ -462,7 +462,7 @@ footer section div a img{
         color: white;
         display: grid;
         grid-template-columns: 11.9375rem 1fr;
-        grid-template-rows: 14rem 1fr 8.125rem;
+        grid-template-rows: 14rem 1fr 11.7rem;
         grid-template-areas:
         "conoce conoce"
         "redSo titulo"
@@ -598,7 +598,7 @@ footer section div a img{
         color: white;
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: 1.5rem 1fr 9.125rem 10.125rem;
+        grid-template-rows: 7.5rem 1fr 8.2rem 7.125rem;
         grid-template-areas:
         "item1"
         "titulo"
