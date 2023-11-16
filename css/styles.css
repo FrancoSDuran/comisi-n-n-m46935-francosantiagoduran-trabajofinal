@@ -536,6 +536,29 @@ footer section div a img{
     .mainProyectos section div p{
         margin: 0rem 3rem;
     }
+
+    .mainContacto{
+        padding: 2rem 1rem;
+    }
+    .mainContacto section div h2{
+        width: 80%;
+        margin: 0rem 2.5rem;
+        font-size: 2rem;
+    }
+    .mainContacto section div p{
+        padding: 2rem 3rem;
+        font-size: .875rem;
+    }
+    .contactaMe{
+        width: 100%;
+        padding: 1.625rem 2.25rem;
+    }
+    .contactaMe form label{
+        font-size: 1rem;
+    }
+    .contactaMe form input{
+        margin: .625rem 0rem 1.25rem;
+    }
 }
 
 @media(max-width:390px){
@@ -712,6 +735,29 @@ footer section div a img{
     }
     .cardContenedor article p{
         font-size: .75rem;
+    }
+
+    .mainContacto{
+        padding: 2rem 1rem;
+    }
+    .mainContacto section div h2{
+        width: 95%;
+        margin: 0rem .5rem;
+        font-size: 1.125rem;
+    }
+    .mainContacto section div p{
+        padding: 2rem 1rem;
+        font-size: .875rem;
+    }
+    .contactaMe{
+        width: 100%;
+        padding: 0rem 1rem;
+    }
+    .contactaMe form label{
+        font-size: 1rem;
+    }
+    .texto{
+        height: 11.75rem;
     }
 }
 
