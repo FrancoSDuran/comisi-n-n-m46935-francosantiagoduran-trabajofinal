@@ -944,7 +944,45 @@
         }
       }
   }
+
+  @media (max-width: 413px){
+  .mainIndex {
+      background-position: -27%;
+      background-size: 185%;
+      grid-template-rows: 14rem 29rem 16.7rem;
+    }
   
+    .presentacionMia div {
+      h1 {
+        font-size: 3.16rem;
+        margin: 0rem 0rem 0rem 1rem;
+      }
+  
+      h2 {
+        background-color: #BF0413;
+        width: 88%;
+        padding: 1.25rem;
+        margin: 1rem;
+        font-size: 1.2rem;
+      }
+    }
+    .proyectoTitular h2 {
+        margin: 0rem 2rem;
+        font-size: 1.7rem;
+    }
+    .misProyectos div h2{
+        margin: 0rem 2.3rem;
+        font-size: 1.7rem;
+    }
+    article {
+        width: 25rem;
+        height: 26.6875rem;
+    
+        div {
+          height: 13.75rem;
+        }
+      }
+}
   @media (max-width: 390px) {
     header nav {
       display: flex;
