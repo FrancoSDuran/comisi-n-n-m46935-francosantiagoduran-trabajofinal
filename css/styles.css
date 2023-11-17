@@ -1,1251 +1,1003 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900 & display = intercambio');
-/**font-family: 'Roboto'; sans-serif;*/
+@import url("https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900 & display = intercambio");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-header{
-    background-color: #2c2c2c;
-    width: 100%;
-    margin: 0 auto;
-    padding: .625rem 1.25rem;
-}
-header nav{
+/**font-family: 'Roboto'; sans-serif;*/
+header {
+  background-color: #2c2c2c;
+  width: 100%;
+  margin: 0 auto;
+  padding: .625rem 1.25rem; }
+  header nav {
     font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-}
-header nav ul{
-    display: flex;
-    list-style: none;
-    gap: 2.5rem;
-    padding-right: 3.125rem;
-}
-header nav ul li a{
+    align-items: center; }
+    header nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2.5rem;
+      padding-right: 3.125rem; }
+      header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.125rem; }
+    header nav a img {
+      width: 12.5rem; }
+
+nav #toggle, nav label {
+  display: none; }
+
+.mainIndex {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(../assets/img/fondo-pro.jpg);
+  background-position: 100%;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 13.6rem 1fr 13.1rem;
+  grid-template-areas: "item1 item1 item1 item1" "redSo titulo titulo titulo" "redSo conoce conoce conoce";
+  justify-content: center; }
+
+.presentacionMia {
+  grid-area: titulo; }
+
+.botonConoce {
+  grid-area: conoce;
+  display: flex;
+  align-items: start;
+  justify-content: right;
+  padding: 3rem 5rem 0rem 0rem; }
+
+.redesPricipal {
+  grid-area: redSo; }
+
+.vacio {
+  grid-area: item1; }
+
+.botonConoce button {
+  background-color: #BF0413;
+  padding: .625rem 1.875rem;
+  border: none;
+  margin: .3125rem 1.25rem;
+  border-radius: .625rem; }
+  .botonConoce button a {
     text-decoration: none;
     color: white;
-    font-size: 1.125rem;
-}
-header nav a img{
-width: 12.5rem;
-}
-nav #toggle, nav label{
-    display: none; 
-}
-
-.mainIndex{
-    background-color: black;
-    width: 100%;
-    height: 100%;
     font-family: 'Roboto', sans-serif;
-    background-image:url(../assets/img/fondo-pro.jpg);
-    background-position: 100%;
-    background-size: 75%;
-    background-repeat: no-repeat;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 13.6rem 1fr 13.1rem;
-    grid-template-areas:
-    "item1 item1 item1 item1"
-    "redSo titulo titulo titulo"
-    "redSo conoce conoce conoce"
-    ;
-    justify-content: center;
-}
-.presentacionMia{
-    grid-area: titulo;
-}
-.botonConoce{
-    grid-area: conoce;
-    display: flex;
-    align-items: start;
-    justify-content: right;
-    padding: 3rem 5rem 0rem 0rem;
-}
-.redesPricipal{
-    grid-area: redSo;
-}
-.vacio{
-grid-area: item1;
-}
-.botonConoce button{
+    font-size: medium; }
+
+.presentacionMia div h2 {
+  background-color: #BF0413;
+  width: 60%;
+  padding: 1.25rem;
+  margin: 0rem 6.25rem 0rem -5rem;
+  font-size: 2.5rem; }
+
+.presentacionMia div h1 {
+  margin: 0rem 6.25rem 0rem -5rem;
+  font-size: 5.625rem; }
+
+.mainIndex section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.875rem;
+  gap: 3.125rem; }
+  .mainIndex section ul li a img {
+    width: 2.5rem; }
+
+.mainSobreMi {
+  background-color: black;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "grup1" "grup2" "grup3";
+  justify-content: center; }
+
+.tituloUno {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: .125rem 4.5rem;
+  grid-area: grup1;
+  height: 46.875rem; }
+  .tituloUno div p {
+    width: 37.5rem;
+    font-size: 1rem;
+    margin: .3125rem 1.875rem; }
+  .tituloUno div h3 {
+    width: 37.5rem;
+    font-size: 1.25rem;
+    margin: .3125rem 1.875rem; }
+
+.tituloDos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: .125rem 4.5rem;
+  grid-area: grup2; }
+  .tituloDos div h3 {
+    width: 37.5rem;
+    font-size: 1.25rem;
+    margin: 1.25rem 1.875rem;
+    line-height: 1.875rem; }
+  .tituloDos div p {
+    width: 37.5rem;
+    font-size: 1rem;
+    margin: .3125rem 1.875rem; }
+
+.tituloTres {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: .125rem 4.5rem 3rem;
+  grid-area: grup3; }
+  .tituloTres div p {
+    width: 37.5rem;
+    font-size: 1rem;
+    margin: 1.25rem 1.875rem; }
+  .tituloTres div h3 {
+    width: 37.5rem;
+    font-size: 1.25rem;
+    margin: 1.25rem 1.875rem; }
+
+.mainSobreMi section div h2 {
+  background-color: #BF0413;
+  width: 90%;
+  padding: 1.25rem;
+  margin: 3rem 2rem;
+  font-size: 2.1875rem; }
+
+.imagenesSobreMi img {
+  width: 100%; }
+
+.mainProyectos section div p {
+  margin: 0rem 3.5rem; }
+
+main {
+  background-color: black;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: white; }
+  main section {
+    padding: 3.5rem 0rem 0rem 0rem; }
+    main section div p {
+      padding: 2rem 1rem;
+      font-size: medium;
+      line-height: 1.375rem; }
+    main section div h2 {
+      background-color: #BF0413;
+      width: 50%;
+      padding: 1.25rem;
+      margin: 0rem 4rem;
+      font-size: 2.1875rem; }
+    main section div h1 {
+      font-size: 3.125rem; }
+
+.botonAtras button {
+  background-color: black;
+  padding: 1.5625rem .0625rem;
+  border: none;
+  margin: .625rem .9375rem;
+  border-radius: 1.25rem; }
+  .botonAtras button a img {
+    width: 30%; }
+
+.misProyectos div h2 {
+  background-color: #BF0413;
+  width: 20%;
+  padding: 1.25rem;
+  margin: 0rem 4rem;
+  font-size: 1.5625rem; }
+
+article {
+  width: 25rem;
+  height: 29.6875rem;
+  background-color: white;
+  margin: 40px;
+  border-radius: .625rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px gray;
+  color: black; }
+  article div {
+    width: 100%;
+    height: 18.75rem;
+    object-fit: contain; }
+    article div img {
+      width: 100%;
+      height: 100%; }
+  article button {
     background-color: #BF0413;
+    font-family: 'Roboto', sans-serif;
     padding: .625rem 1.875rem;
     border: none;
     margin: .3125rem 1.25rem;
-    border-radius: .625rem;
-}
-.botonConoce button a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: medium;
-}
-.presentacionMia div h2{
-    background-color: #BF0413;
-    width: 60%;
-    padding: 1.25rem;
-    margin: 0rem 6.25rem 0rem -5rem;
-    font-size: 2.5rem;
-}
-.presentacionMia div h1{
-    margin: 0rem 6.25rem 0rem -5rem;
-    font-size: 5.625rem;
-}
-.mainIndex section ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1.875rem;
-    gap: 3.125rem;
-}
-.mainIndex section ul li a img{
-    width: 2.5rem;
-}
+    border-radius: .625rem; }
+    article button a {
+      text-decoration: none;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: medium; }
 
-.mainSobreMi{
-    background-color: black;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "grup1"
-    "grup2"
-    "grup3";
-    justify-content: center;
-}
-.tituloUno{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin: .125rem 4.5rem;
-    grid-area: grup1;
-    height: 46.875rem;
-}
-.tituloUno div p{
-    width: 37.5rem;
-    font-size: 1rem;
-    margin: .3125rem 1.875rem;
-}
-.tituloUno div h3{
-    width: 37.5rem;
-    font-size: 1.25rem;
-    margin: .3125rem 1.875rem;
-}
-.tituloDos{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin: .125rem 4.5rem;
-    grid-area: grup2;
-}
-.tituloDos div h3{
-    width: 37.5rem;
-    font-size: 1.25rem;
-    margin: 1.25rem 1.875rem;
-    line-height: 1.875rem;
-}
-.tituloDos div p{
-    width: 37.5rem;
-    font-size: 1rem;
-    margin: .3125rem 1.875rem;
-}
-.tituloTres{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin: .125rem 4.5rem 3rem;
-    grid-area: grup3;
-}
-.tituloTres div p{
-    width: 37.5rem;
-    font-size: 1rem;
-    margin: 1.25rem 1.875rem;
-}
-.tituloTres div h3{
-        width: 37.5rem;
-        font-size: 1.25rem;
-        margin: 1.25rem 1.875rem;
-}
-.mainSobreMi section div h2 {
-    background-color: #BF0413;
-    width: 90%;
-    padding: 1.25rem;
-    margin: 3rem 2rem;
-    font-size: 2.1875rem;
-}
-.imagenesSobreMi img{
-    width: 100%;
-}
-
-.mainProyectos section div p{
-    margin: 0rem 3.5rem;
-}
-main{
-    background-color: black;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-main section{
-    padding: 3.5rem 0rem 0rem 0rem;
-}
-main section div p{
-    padding: 2rem 1rem;
-    font-size: medium;
-    line-height: 1.375rem;
-}
-main section div h2{
-    background-color: #BF0413;
-    width: 50%;
-    padding: 1.25rem;
-    margin: 0rem 4rem;
-    font-size: 2.1875rem;
-}
-main section div h1{
-    font-size: 3.125rem;
-}
-.botonAtras button{
-    background-color: black;
-    padding: 1.5625rem .0625rem;
-    border: none;
-    margin: .625rem .9375rem;
-    border-radius: 1.25rem;
-}
-.botonAtras button a img{
-    width: 30%;
-}
-
-.misProyectos div h2{
-    background-color: #BF0413;
-    width: 20%;
-    padding: 1.25rem;
-    margin: 0rem 4rem;
-    font-size: 1.5625rem;
-}
-article {
-    width: 25rem;
-    height: 29.6875rem;
-    background-color: white;
-    margin: 40px;
-    border-radius: .625rem;
-    overflow: hidden;
-    box-shadow: 2px 2px 10px gray;
-    color: black
-    }
-    article div{
-        width: 100%;
-        height: 18.75rem;
-        object-fit: contain;
-    }
-    article div img{
-        width: 100%;
-        height: 100%;
-    }
-    article button{
-        background-color: #BF0413;
-        font-family: 'Roboto', sans-serif;
-        padding: .625rem 1.875rem;
-        border: none;
-        margin: .3125rem 1.25rem;
-        border-radius: .625rem;
-    }
-    article button a{
-        text-decoration: none;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: medium;
-    }
-.cardContenedor article h3{
+.cardContenedor {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .cardContenedor article h3 {
     font-family: 'Roboto', sans-serif;
     padding: .3125rem;
     margin: .25rem;
     background-color: black;
-    color: white;
-}
-.cardContenedor article p{
+    color: white; }
+  .cardContenedor article p {
     font-family: 'Roboto', sans-serif;
     padding: .1875rem;
-    margin: .25rem;
-}
-.cardContenedor{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+    margin: .25rem; }
 
-.tituloKamila div h1{
-padding: 0rem 0rem 0rem 3.5rem;
-}
-.paletaColor{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-}
-.paletaColor div img{
-    width: 100%;
-    padding: 0rem 0rem 0rem 3rem;
-}
-.tipoK{
-    display: flex;
-    justify-content: center;
-}
-.tipoK div img{
-    width: 25rem;
-    padding: 0rem 3rem 0rem 0rem;
-}
-.logoK{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-}
-.logoK div img{
-    width: 25rem;
-    padding: 0rem 0rem 0rem 3rem;
-}
-.imgProyecto{
-    width: 100%;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 10%;
-    grid-template-rows: 55% 45%;
-    grid-template-areas: 
-    "img1 img2 img3 img3"
-    "img1 img2 img4 img4";
-    justify-content: center;
-    align-items: center;
-}
-.imgProyecto1 img{
-    width: 30%;
-}
-.mockup1{
-    width: 101%;
-    grid-area: img1;
-}
-.mockup2{
-    width: 100%;
-    grid-area: img2;
-}
-.mockup3{
-    width: 100%;
-    grid-area: img3;
-}
-.mockup4{
-    width: 100%;
-    grid-area: img4;
-}
+.tituloKamila div h1 {
+  padding: 0rem 0rem 0rem 3.5rem; }
 
-.contactaMe{
-    width: 56.25rem;
-    margin: auto;
-    padding: .625rem 1.25rem;
-    box-sizing: border-box;
-    margin-top: 1.25rem;
-}
-.contactaMe form label{
+.paletaColor {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; }
+  .paletaColor div img {
+    width: 100%;
+    padding: 0rem 0rem 0rem 3rem; }
+
+.tipoK {
+  display: flex;
+  justify-content: center; }
+  .tipoK div img {
+    width: 25rem;
+    padding: 0rem 3rem 0rem 0rem; }
+
+.logoK {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; }
+  .logoK div img {
+    width: 25rem;
+    padding: 0rem 0rem 0rem 3rem; }
+
+.imgProyecto {
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 10%;
+  grid-template-rows: 55% 45%;
+  grid-template-areas: "img1 img2 img3 img3" "img1 img2 img4 img4";
+  justify-content: center;
+  align-items: center; }
+
+.imgProyecto1 img {
+  width: 30%; }
+
+.mockup1 {
+  width: 101%;
+  grid-area: img1; }
+
+.mockup2 {
+  width: 100%;
+  grid-area: img2; }
+
+.mockup3 {
+  width: 100%;
+  grid-area: img3; }
+
+.mockup4 {
+  width: 100%;
+  grid-area: img4; }
+
+.contactaMe {
+  width: 56.25rem;
+  margin: auto;
+  padding: .625rem 1.25rem;
+  box-sizing: border-box;
+  margin-top: 1.25rem; }
+  .contactaMe form label {
     font-size: 1.25rem;
-    margin: .625rem;
-}
-.contactaMe form input{
-width: 100%;
-margin: .625rem .625rem 1.25rem;
-padding: .4375rem;
-box-sizing: border-box;
-}
-.texto{
-height: 18.75rem;
-}
-.boton{
-    background-color: #BF0413;
-    font-family: 'Roboto', sans-serif;
-    padding: .625rem 1.875rem;
-    border: none;
-    margin: .3125rem 1.25rem;
-    border-radius: .625rem;
-    color: white;
-    font-size: medium;
-}
-
-footer{
-    background-color: #BF0413;
+    margin: .625rem; }
+  .contactaMe form input {
     width: 100%;
-    height: 7.1875rem;
-    font-family: 'Roboto', sans-serif;
-    padding: 0rem 2.5rem;
-}
-footer section{
+    margin: .625rem .625rem 1.25rem;
+    padding: .4375rem;
+    box-sizing: border-box; }
+
+.texto {
+  height: 18.75rem; }
+
+.boton {
+  background-color: #BF0413;
+  font-family: 'Roboto', sans-serif;
+  padding: .625rem 1.875rem;
+  border: none;
+  margin: .3125rem 1.25rem;
+  border-radius: .625rem;
+  color: white;
+  font-size: medium; }
+
+footer {
+  background-color: #BF0413;
+  width: 100%;
+  height: 7.1875rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 0rem 2.5rem; }
+  footer section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.logoPie a img{
-    width: 90%;
-    padding: 1.25rem;
-}
-footer section div a img{
-    width: 2.5rem;
-}
-.redesSociales{
-    display: flex;
-    list-style: none;
-    gap: .625rem;
-    padding-right: .625rem;
-}
+    justify-content: space-between; }
 
-.error404{
-    width: 100%;
-    background-color: white;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.emojiTriste{
-    width: 20%;
-    padding: 4.5rem 0rem 0rem 0rem;
-}
-.emojiTriste img{
-    width: 100%;
-}
-.error404 div h1{
-    font-size: 6.25rem;
-    text-align: center;
-}
-.error404 div h2{
-    text-align: center;
-    color: rgb(102, 102, 102);
-}
-.error404 div p{
-    text-align: center;
-    color: rgb(102, 102, 102);
-    padding: 1.5rem 1rem 8rem 1rem;
-}
-.error404 div p button{
+.logoPie a img {
+  width: 90%;
+  padding: 1.25rem; }
+
+footer section div a img {
+  width: 2.5rem; }
+
+.redesSociales {
+  display: flex;
+  list-style: none;
+  gap: .625rem;
+  padding-right: .625rem; }
+
+.error404 {
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.emojiTriste {
+  width: 20%;
+  padding: 4.5rem 0rem 0rem 0rem; }
+  .emojiTriste img {
+    width: 100%; }
+
+.error404 div h1 {
+  font-size: 6.25rem;
+  text-align: center; }
+
+.error404 div h2 {
+  text-align: center;
+  color: #666666; }
+
+.error404 div p {
+  text-align: center;
+  color: #666666;
+  padding: 1.5rem 1rem 8rem 1rem; }
+  .error404 div p button {
     background-color: transparent;
     padding: 0rem 0rem 0rem .3125rem;
     font-size: .9375rem;
-    border: none;
-}
+    border: none; }
 
-@media(max-width:768px){
-    header nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    header nav ul{
-        padding: .25rem 0rem;
-    }
-    .mainIndex{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        font-family: 'Roboto', sans-serif;
-        background-image:url(../assets/img/fondo-pro.jpg);
-        background-position: -167%;
-        background-size: 115%;
-        background-repeat: no-repeat;
-        color: white;
-        display: grid;
-        grid-template-columns: 25% 75%;
-        grid-template-rows: 14rem 1fr 11.7rem;
-        grid-template-areas:
-        "conoce conoce"
-        "redSo titulo"
-        "item1 item1"
-        ;
-        justify-content: center;
-    }
-    .presentacionMia div h1{
-        margin: 0rem 1.25rem 0rem 2rem;
-        font-size: 6rem;
-    }
-    .presentacionMia div h2{
-        background-color: #BF0413;
-        width: 88%;
-        padding: 1.25rem;
-        margin: 0rem 1.25rem 0rem 2rem;
-        font-size: 2.4rem;}
-        .botonConoce{
-            grid-area: conoce;
-            display: flex;
-            align-items: start;
-            justify-content: right;
-            padding: 5rem 1rem 0rem 0rem;
-        }
-
-    .mainSobreMi section div h2{
-        background-color: #BF0413;
-        width: 68%;
-        margin: 3rem 2rem auto;
-        font-size: 1.5rem;
-    }
-    .imagenesSobreMi img{
-        width: 100%;
-        object-fit: cover;
-        height: 18.75rem;
-    }
-    .tituloUno{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        margin: .125rem 4.5rem;
-        grid-area: grup1;
-        height: auto;
-    }
-    .tituloDos{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        margin: .125rem 4.5rem;
-        grid-area: grup2;
-        height: auto;
-    }
-    .tituloTres{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        margin: .125rem 4.5rem;
-        grid-area: grup3;
-        height: auto;
-    }
-    main section{
-        padding: 0rem;
-    }
-
-    .mainProyectos{
-        padding: 3.5rem 1rem;
-    }
-    .mainProyectos section div h2{
-        width: 80%;
-    }
-    .mainProyectos section div p{
-        margin: 0rem 3rem;
-    }
-
-    .botonAtras{
-        padding: 0rem 2rem 0rem;
-    }
+@media (max-width: 768px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    header nav ul {
+      padding: .25rem 0rem; }
+  .mainIndex {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../assets/img/fondo-pro.jpg);
+    background-position: -167%;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 14rem 1fr 11.7rem;
+    grid-template-areas: "conoce conoce" "redSo titulo" "item1 item1";
+    justify-content: center; }
+  .presentacionMia div h1 {
+    margin: 0rem 1.25rem 0rem 2rem;
+    font-size: 6rem; }
+  .presentacionMia div h2 {
+    background-color: #BF0413;
+    width: 88%;
+    padding: 1.25rem;
+    margin: 0rem 1.25rem 0rem 2rem;
+    font-size: 2.4rem; }
+  .botonConoce {
+    grid-area: conoce;
+    display: flex;
+    align-items: start;
+    justify-content: right;
+    padding: 5rem 1rem 0rem 0rem; }
+  .mainSobreMi section div h2 {
+    background-color: #BF0413;
+    width: 68%;
+    margin: 3rem 2rem auto;
+    font-size: 1.5rem; }
+  .imagenesSobreMi img {
+    width: 100%;
+    object-fit: cover;
+    height: 18.75rem; }
+  .tituloUno {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: .125rem 4.5rem;
+    grid-area: grup1;
+    height: auto; }
+  .tituloDos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: .125rem 4.5rem;
+    grid-area: grup2;
+    height: auto; }
+  .tituloTres {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: .125rem 4.5rem;
+    grid-area: grup3;
+    height: auto; }
+  main section {
+    padding: 0rem; }
+  .mainProyectos {
+    padding: 3.5rem 1rem; }
+    .mainProyectos section div h2 {
+      width: 80%; }
+    .mainProyectos section div p {
+      margin: 0rem 3rem; }
+  .botonAtras {
+    padding: 0rem 2rem 0rem; }
     .botonAtras button {
-        padding: 1rem 0rem;
-    }
-    .tituloKamila{
-        padding: 0rem 2rem 0rem;
-    }
-    .tituloKamila div h1{
-        padding: 0rem 2rem;
-    }
-    .tituloKamila div p{
-        padding: 2rem 3rem;
-        font-size: .875rem;
-        line-height: 1.375rem;
-    }
-    .paletaColor{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0rem 0rem 3rem 0rem;
-    }
-    .paletaColor div h2{
-        background-color: #BF0413;
-        width: 70%;
-        padding: 1.25rem;
-        margin: 0rem 3rem;
-        font-size: 1.75rem;
-    }
-    .paletaColor div p{
-        padding: 2rem 3rem;
-        font-size: .875rem;
-    }
-    .paletaColor div img{
-        padding: 0rem;
-        width: 70%;
-    }
-    .imgProyecto1{
-        text-align: center;
-    }
-    .imgProyecto1 img{
-        width: 70%;
-        padding: 0rem;
-    }
-    .tipoK{
-        padding: 0rem 3rem 0rem;
-    }
-    .tipoK div h2{
-        background-color: #BF0413;
-        width: 70%;
-        padding: 1.25rem;
-        margin: 0rem 3rem;
-        font-size: 1.75rem;
-    }
-    .tipoK div p{
-        padding: 2rem 3rem;
-        font-size: .875rem;
-    }
-    .logoK{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0rem 0rem 3rem 0rem;
-    }
-    .logoK div h2{
-        background-color: #BF0413;
-        width: 20%;
-        padding: 1.25rem;
-        margin: 0rem 3rem;
-        font-size: 1.75rem;
-    }
-    .logoK div p{
-        padding: 2rem 3rem;
-        font-size: .875rem;
-    }
-    .logoK div img{
-        padding: 0rem;
-        width: 70%;
-    }
+      padding: 1rem 0rem; }
+  .tituloKamila {
+    padding: 0rem 2rem 0rem; }
+    .tituloKamila div h1 {
+      padding: 0rem 2rem; }
+    .tituloKamila div p {
+      padding: 2rem 3rem;
+      font-size: .875rem;
+      line-height: 1.375rem; }
+  .paletaColor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 0rem 3rem 0rem; }
+    .paletaColor div h2 {
+      background-color: #BF0413;
+      width: 70%;
+      padding: 1.25rem;
+      margin: 0rem 3rem;
+      font-size: 1.75rem; }
+    .paletaColor div p {
+      padding: 2rem 3rem;
+      font-size: .875rem; }
+    .paletaColor div img {
+      padding: 0rem;
+      width: 70%; }
+  .imgProyecto1 {
+    text-align: center; }
+    .imgProyecto1 img {
+      width: 70%;
+      padding: 0rem; }
+  .tipoK {
+    padding: 0rem 3rem 0rem; }
+    .tipoK div h2 {
+      background-color: #BF0413;
+      width: 70%;
+      padding: 1.25rem;
+      margin: 0rem 3rem;
+      font-size: 1.75rem; }
+    .tipoK div p {
+      padding: 2rem 3rem;
+      font-size: .875rem; }
+  .logoK {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 0rem 3rem 0rem; }
+    .logoK div h2 {
+      background-color: #BF0413;
+      width: 20%;
+      padding: 1.25rem;
+      margin: 0rem 3rem;
+      font-size: 1.75rem; }
+    .logoK div p {
+      padding: 2rem 3rem;
+      font-size: .875rem; }
+    .logoK div img {
+      padding: 0rem;
+      width: 70%; }
+  .mainContacto {
+    padding: 2rem 1rem; }
+    .mainContacto section div h2 {
+      width: 80%;
+      margin: 0rem 2.5rem;
+      font-size: 2rem; }
+    .mainContacto section div p {
+      padding: 2rem 3rem;
+      font-size: .875rem; }
+  .contactaMe {
+    width: 100%;
+    padding: 1.625rem 2.25rem; }
+    .contactaMe form label {
+      font-size: 1rem; }
+    .contactaMe form input {
+      margin: .625rem 0rem 1.25rem; } }
 
-    .mainContacto{
-        padding: 2rem 1rem;
-    }
-    .mainContacto section div h2{
-        width: 80%;
-        margin: 0rem 2.5rem;
-        font-size: 2rem;
-    }
-    .mainContacto section div p{
-        padding: 2rem 3rem;
-        font-size: .875rem;
-    }
-    .contactaMe{
-        width: 100%;
-        padding: 1.625rem 2.25rem;
-    }
-    .contactaMe form label{
-        font-size: 1rem;
-    }
-    .contactaMe form input{
-        margin: .625rem 0rem 1.25rem;
-    }
-}
+@media (max-width: 1100px) {
+  .mainSobreMi section div h2 {
+    background-color: #BF0413;
+    width: 90%;
+    margin: 1rem 1rem auto;
+    font-size: 1.25rem; }
+  .imagenesSobreMi {
+    text-align: center; }
+    .imagenesSobreMi img {
+      width: 70%;
+      object-fit: cover;
+      height: 35.75rem; }
+  .tituloUno {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: .125rem 1.5rem;
+    grid-area: grup1;
+    height: auto; }
+    .tituloUno div p {
+      width: 100%;
+      font-size: .75rem;
+      margin: 0.313rem 0rem; }
+    .tituloUno div h3 {
+      width: 100%;
+      font-size: 1rem;
+      margin: .3125rem 0rem; }
+  .tituloDos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: .125rem 1.5rem;
+    grid-area: grup2;
+    height: auto; }
+    .tituloDos div p {
+      width: 100%;
+      font-size: .75rem;
+      margin: 0.313rem 0rem; }
+    .tituloDos div h3 {
+      width: 100%;
+      font-size: 1rem;
+      margin: 1rem 0rem; }
+  .tituloTres {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: .125rem 1.5rem;
+    grid-area: grup3;
+    height: auto; }
+    .tituloTres div p {
+      width: 100%;
+      font-size: .75rem;
+      margin: 0.313rem 0rem; }
+    .tituloTres div h3 {
+      width: 100%;
+      font-size: 1rem;
+      margin: 1rem 0rem; }
+  main section {
+    padding: 0rem; }
+    main section div p {
+      padding: 1rem 1rem;
+      line-height: 1rem; } }
 
-@media(max-width:1100px){
-    .mainSobreMi section div h2{
-        background-color: #BF0413;
-        width: 90%;
-        margin: 1rem 1rem auto;
-        font-size: 1.25rem;
-    }
-    .imagenesSobreMi{
-        text-align: center;
-    }
-    .imagenesSobreMi img{
-        width: 70%;
-        object-fit: cover;
-        height: 35.75rem;
-    }
-    .tituloUno{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        margin: .125rem 1.5rem;
-        grid-area: grup1;
-        height: auto;
-    }
-    .tituloUno div p{
-        width: 100%;
-        font-size: .75rem;
-        margin: 0.313rem 0rem;
-    }
-    .tituloUno div h3{
-        width: 100%;
-        font-size: 1rem;
-        margin: .3125rem 0rem;
-    }
-    .tituloDos{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        margin: .125rem 1.5rem;
-        grid-area: grup2;
-        height: auto;
-    }
-    .tituloDos div p{
-        width: 100%;
-        font-size: .75rem;
-        margin: 0.313rem 0rem;
-    }
-    .tituloDos div h3{
-        width: 100%;
-        font-size: 1rem;
-        margin: 1rem 0rem;
-    }
-    .tituloTres{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        margin: .125rem 1.5rem;
-        grid-area: grup3;
-        height: auto;
-    }
-    .tituloTres div p{
-        width: 100%;
-        font-size: .75rem;
-        margin: 0.313rem 0rem;
-    }
-    .tituloTres div h3{
-        width: 100%;
-        font-size: 1rem;
-        margin: 1rem 0rem;
-    }
-    main section div p{
-        padding: 1rem 1rem;
-        line-height: 1rem;
-    }
-    main section{
-        padding: 0rem;
-    }
-}
+@media (max-width: 527px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header nav .menu {
+      width: 100%;
+      height: 0;
+      overflow: hidden; }
+    header nav div ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem 0rem; }
+    header nav label {
+      display: flex;
+      color: white;
+      cursor: pointer; }
+    header nav #toggle:checked ~ .menu {
+      height: 100%; }
+  .mainIndex {
+    background-position: -48%;
+    background-size: 152%;
+    grid-template-rows: 14rem 29rem 16.7rem; }
+  .presentacionMia div h1 {
+    font-size: 4rem; }
+  .presentacionMia div h2 {
+    background-color: #BF0413;
+    width: 88%;
+    padding: 1.25rem;
+    margin: 1rem;
+    font-size: 1.3rem; }
+  .imagenesSobreMi img {
+    width: 90%;
+    object-fit: cover;
+    height: 20.75rem; } }
 
-@media(max-width:527px){
-    header nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    header nav .menu{
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    header nav div ul{
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem 0rem;
-    
-    }
-    header nav label{
-        display: flex;
-        color: white;
-        cursor: pointer;
-    }
-    header nav #toggle:checked ~ .menu{
-        height: 100%;
-    }
-    .mainIndex{
-        background-position: -48%;
-        background-size: 152%;
-        grid-template-rows: 14rem 29rem 16.7rem;
-    }
-    .presentacionMia div h1{
-        font-size: 4rem;
-    }
-    .presentacionMia div h2{
-        background-color: #BF0413;
-        width: 88%;
-        padding: 1.25rem;
-        margin: 1rem;
-        font-size: 1.3rem;
-    }
-
-    .imagenesSobreMi img{
-        width: 90%;
-        object-fit: cover;
-        height: 20.75rem;
-    }
-}
-
-@media(max-width:390px){
-    header nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    header nav .menu{
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    header nav div ul{
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem 0rem;
-    
-    }
-    header nav label{
-        display: flex;
-        color: white;
-        cursor: pointer;
-    }
-    header nav #toggle:checked ~ .menu{
-        height: 100%;
-    }
-    .mainIndex{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        font-family: 'Roboto', sans-serif;
-        background-image:url(../assets/img/fondo-pro.jpg);
-        background-position:inherit;
-        background-size: 134%;
-        background-repeat: no-repeat;
-        color: white;
-        display: grid;
-        grid-template-columns: none;
-        grid-template-rows: 7.5rem 1fr 8.2rem 7.125rem;
-        grid-template-areas:
-        "item1"
-        "titulo"
-        "conoce"
-        "redSo"
-        ;
-        justify-content: center;
-    }
-    .presentacionMia div h1{
-        background-color: #262626b0;
-        margin: 1rem;
-        font-size: 4rem;
-    }
-    .presentacionMia div h2{
-        background-color: #BF0413;
-        width: 88%;
-        padding: 1.25rem;
-        margin: 1rem;
-        font-size: 1.6rem;
-    }
-    .botonConoce{
-            grid-area: conoce;
-            display: flex;
-            align-items: start;
-            justify-content: right;
-            padding: 5rem 1rem 0rem 0rem;
-    }
-    .mainIndex section ul{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 1.875rem;
-        gap: 3.125rem;
-    }
-
-    .mainSobreMi section div h2{
-        background-color: #BF0413;
-        width: 90%;
-        margin: 1rem 1rem auto;
-        font-size: 1.25rem;
-    }
-    .imagenesSobreMi img{
-        width: 100%;
-        object-fit: cover;
-        height: 14.75rem;
-    }
-    .tituloUno{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        margin: .125rem 1.5rem;
-        grid-area: grup1;
-        height: auto;
-    }
-    .tituloUno div p{
-        width: 100%;
-        font-size: .75rem;
-        margin: 0.313rem 0rem;
-    }
-    .tituloUno div h3{
-        width: 100%;
-        font-size: 1rem;
-        margin: .3125rem 0rem;
-    }
-    .tituloDos{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        margin: .125rem 1.5rem;
-        grid-area: grup2;
-        height: auto;
-    }
-    .tituloDos div p{
-        width: 100%;
-        font-size: .75rem;
-        margin: 0.313rem 0rem;
-    }
-    .tituloDos div h3{
-        width: 100%;
-        font-size: 1rem;
-        margin: 1rem 0rem;
-    }
-    .tituloTres{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        margin: .125rem 1.5rem;
-        grid-area: grup3;
-        height: auto;
-    }
-    .tituloTres div p{
-        width: 100%;
-        font-size: .75rem;
-        margin: 0.313rem 0rem;
-    }
-    .tituloTres div h3{
-        width: 100%;
-        font-size: 1rem;
-        margin: 1rem 0rem;
-    }
-    main section div p{
-        padding: 1rem 1rem;
-        line-height: 1rem;
-    }
-    main section{
-        padding: 0rem;
-    }
-
-    .botonAtras{
-        padding: 0rem 2rem 2rem;
-    }
+@media (max-width: 390px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header nav .menu {
+      width: 100%;
+      height: 0;
+      overflow: hidden; }
+    header nav div ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem 0rem; }
+    header nav label {
+      display: flex;
+      color: white;
+      cursor: pointer; }
+    header nav #toggle:checked ~ .menu {
+      height: 100%; }
+  .mainIndex {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../assets/img/fondo-pro.jpg);
+    background-position: inherit;
+    background-size: 134%;
+    background-repeat: no-repeat;
+    color: white;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 7.5rem 1fr 8.2rem 7.125rem;
+    grid-template-areas: "item1" "titulo" "conoce" "redSo";
+    justify-content: center; }
+  .presentacionMia div h1 {
+    background-color: #262626b0;
+    margin: 1rem;
+    font-size: 4rem; }
+  .presentacionMia div h2 {
+    background-color: #BF0413;
+    width: 88%;
+    padding: 1.25rem;
+    margin: 1rem;
+    font-size: 1.6rem; }
+  .botonConoce {
+    grid-area: conoce;
+    display: flex;
+    align-items: start;
+    justify-content: right;
+    padding: 5rem 1rem 0rem 0rem; }
+  .mainIndex section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1.875rem;
+    gap: 3.125rem; }
+  .mainSobreMi section div h2 {
+    background-color: #BF0413;
+    width: 90%;
+    margin: 1rem 1rem auto;
+    font-size: 1.25rem; }
+  .imagenesSobreMi img {
+    width: 100%;
+    object-fit: cover;
+    height: 14.75rem; }
+  .tituloUno {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: .125rem 1.5rem;
+    grid-area: grup1;
+    height: auto; }
+    .tituloUno div p {
+      width: 100%;
+      font-size: .75rem;
+      margin: 0.313rem 0rem; }
+    .tituloUno div h3 {
+      width: 100%;
+      font-size: 1rem;
+      margin: .3125rem 0rem; }
+  .tituloDos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: .125rem 1.5rem;
+    grid-area: grup2;
+    height: auto; }
+    .tituloDos div p {
+      width: 100%;
+      font-size: .75rem;
+      margin: 0.313rem 0rem; }
+    .tituloDos div h3 {
+      width: 100%;
+      font-size: 1rem;
+      margin: 1rem 0rem; }
+  .tituloTres {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: .125rem 1.5rem;
+    grid-area: grup3;
+    height: auto; }
+    .tituloTres div p {
+      width: 100%;
+      font-size: .75rem;
+      margin: 0.313rem 0rem; }
+    .tituloTres div h3 {
+      width: 100%;
+      font-size: 1rem;
+      margin: 1rem 0rem; }
+  main section {
+    padding: 0rem; }
+    main section div p {
+      padding: 1rem 1rem;
+      line-height: 1rem; }
+  .botonAtras {
+    padding: 0rem 2rem 2rem; }
     .botonAtras button {
-        padding: 0.5rem 0rem;
-    }
-    .tituloKamila div h1{
-        padding: 0rem;
-        font-size: 1.9rem;
-        line-height: 2.5rem;
-    }
-    .tituloKamila div p{
-        padding: 2rem 0rem;
-        font-size: .875rem;
-        line-height: 1.375rem;
-    }
-    .paletaColor div h2{
-        background-color: #BF0413;
-        width: 70%;
-        padding: 1.25rem;
-        margin: 0rem 2rem;
-        font-size: 1.3rem;
-    }
-    .paletaColor div p{
-        padding: 2rem 2rem;
-        font-size: .875rem;
-    }
-    .paletaColor div img{
-        padding: 0rem;
-        width: 70%;
-    }
-    .imgProyecto1{
-        text-align: center;
-    }
-    .imgProyecto1 img{
-        width: 70%;
-        padding: 0rem;
-    }
-    .tipoK{
-        padding: 0rem 2rem 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .tipoK div h2{
-        background-color: #BF0413;
-        width: 55%;
-        padding: 1.25rem;
-        margin: 0rem;
-        font-size: 1.3rem;
-    }
-    .tipoK div p{
-        padding: 2rem 0rem;
-        font-size: .875rem;
-    }
-    .tipoK div img{
-        width: 100%;
-        padding: 0rem;
-    }
-    .logoK div h2{
-        background-color: #BF0413;
-        width: 35%;
-        padding: 1.25rem;
-        margin: 0rem 2rem;
-        font-size: 1.3rem;
-    }
-    .logoK div p{
-        padding: 2rem 2rem;
-        font-size: .875rem;
-    }
-    .logoK div img{
-        padding: 0rem;
-        width: 70%;
-    }
-    .secMockup div h2{
-        background-color: #BF0413;
-        width: 35%;
-        padding: 1.25rem;
-        margin: 0rem 2rem;
-        font-size: 1.3rem;
-    }
-    .imgProyecto{
-        width: 100%;
-        padding: 2rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 16.625rem 13.625rem;
-        grid-template-areas: 
-        "img1"
-        "img2"
-        "img3" 
-        "img4";
-        justify-content: center;
-        align-items: center;
-    }
-    .mockup1{
-        width: 100%;
-    }
-    .mockup3{
-        height: auto;
-    }
+      padding: 0.5rem 0rem; }
+  .tituloKamila div h1 {
+    padding: 0rem;
+    font-size: 1.9rem;
+    line-height: 2.5rem; }
+  .tituloKamila div p {
+    padding: 2rem 0rem;
+    font-size: .875rem;
+    line-height: 1.375rem; }
+  .paletaColor div h2 {
+    background-color: #BF0413;
+    width: 70%;
+    padding: 1.25rem;
+    margin: 0rem 2rem;
+    font-size: 1.3rem; }
+  .paletaColor div p {
+    padding: 2rem 2rem;
+    font-size: .875rem; }
+  .paletaColor div img {
+    padding: 0rem;
+    width: 70%; }
+  .imgProyecto1 {
+    text-align: center; }
+    .imgProyecto1 img {
+      width: 70%;
+      padding: 0rem; }
+  .tipoK {
+    padding: 0rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .tipoK div h2 {
+      background-color: #BF0413;
+      width: 55%;
+      padding: 1.25rem;
+      margin: 0rem;
+      font-size: 1.3rem; }
+    .tipoK div p {
+      padding: 2rem 0rem;
+      font-size: .875rem; }
+    .tipoK div img {
+      width: 100%;
+      padding: 0rem; }
+  .logoK div h2 {
+    background-color: #BF0413;
+    width: 35%;
+    padding: 1.25rem;
+    margin: 0rem 2rem;
+    font-size: 1.3rem; }
+  .logoK div p {
+    padding: 2rem 2rem;
+    font-size: .875rem; }
+  .logoK div img {
+    padding: 0rem;
+    width: 70%; }
+  .secMockup div h2 {
+    background-color: #BF0413;
+    width: 35%;
+    padding: 1.25rem;
+    margin: 0rem 2rem;
+    font-size: 1.3rem; }
+  .imgProyecto {
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 16.625rem 13.625rem;
+    grid-template-areas: "img1" "img2" "img3" "img4";
+    justify-content: center;
+    align-items: center; }
+  .mockup1 {
+    width: 100%; }
+  .mockup3 {
+    height: auto; }
+  .mainProyectos {
+    padding: 3.5rem 1rem; }
+    .mainProyectos section div h2 {
+      width: 82%;
+      margin: 0rem 2rem; }
+  main section div h2 {
+    font-size: 1.5rem; }
+  .mainProyectos section div p {
+    margin: 1rem 3rem;
+    font-size: .75rem; }
+  article {
+    width: 25rem;
+    height: 23.6875rem; }
+    article div {
+      height: 12.75rem; }
+  .cardContenedor article h3 {
+    font-size: 1rem; }
+  .cardContenedor article p {
+    font-size: .75rem; }
+  .mainContacto {
+    padding: 2rem 1rem; }
+    .mainContacto section div h2 {
+      width: 95%;
+      margin: 0rem .5rem;
+      font-size: 1.125rem; }
+    .mainContacto section div p {
+      padding: 2rem 1rem;
+      font-size: .875rem; }
+  .contactaMe {
+    width: 100%;
+    padding: 0rem 1rem; }
+    .contactaMe form label {
+      font-size: 1rem; }
+  .texto {
+    height: 11.75rem; }
+  footer {
+    height: 100%; }
+    footer section {
+      flex-direction: column; }
+  .logoPie {
+    text-align: center; }
+  .redesSociales {
+    padding: 0rem 0rem 1rem 0rem; } }
 
-    .mainProyectos{
-        padding: 3.5rem 1rem;
-    }
-    .mainProyectos section div h2{
-        width: 82%;
-        margin: 0rem 2rem;
-    }
-    main section div h2{
-        font-size: 1.5rem;
-    }
-    .mainProyectos section div p{
-        margin: 1rem 3rem;
-        font-size: .75rem;
-    }
-    article{
-        width: 25rem;
-        height: 23.6875rem;
-    }
-    article div{
-        height: 12.75rem;
-    }
-    .cardContenedor article h3{
-        font-size: 1rem;
-    }
-    .cardContenedor article p{
-        font-size: .75rem;
-    }
-
-    .mainContacto{
-        padding: 2rem 1rem;
-    }
-    .mainContacto section div h2{
-        width: 95%;
-        margin: 0rem .5rem;
-        font-size: 1.125rem;
-    }
-    .mainContacto section div p{
-        padding: 2rem 1rem;
-        font-size: .875rem;
-    }
-    .contactaMe{
-        width: 100%;
-        padding: 0rem 1rem;
-    }
-    .contactaMe form label{
-        font-size: 1rem;
-    }
-    .texto{
-        height: 11.75rem;
-    }
-    footer{
-        height: 100%;
-    }
-    footer section{
-        flex-direction: column;
-    }
-    .logoPie{
-        text-align: center;
-    }
-    .redesSociales{
-        padding: 0rem 0rem 1rem 0rem;
-    }
-}
-
-@media(max-width:320px){
-    .mainIndex{
-        background-color: black;
-        width: 320px;
-        height: 100%;
-        font-family: 'Roboto', sans-serif;
-        background-image: none;
-        color: white;
-        display: grid;
-        grid-template-columns: none;
-        grid-template-rows: 4.5rem 19rem 4.125rem 4.125rem;
-        grid-template-areas:
-        "item1"
-        "titulo"
-        "conoce"
-        "redSo"
-        ;
-        justify-content: center;
-    }
-    .presentacionMia{
-        padding: 0.5rem 0rem 0rem 0rem;
-    }
-    .presentacionMia div h1{
-        background-color: black;
-        margin: 0rem;
-        font-size: 3rem;
-        padding: 0rem 1rem;
-        width: 20rem;
-    }
-    .presentacionMia div h2{
-        background-color: #BF0413;
-        width: 89%;
-        padding: 1.25rem;
-        margin: 1rem;
-        font-size: 1.1rem;
-    }
-    .botonConoce{
-        grid-area: conoce;
-        display: flex;
-        align-items: start;
-        justify-content: right;
-        padding: 1rem 1rem 0rem 0rem;
-    }
-    .botonConoce button{
-        background-color: #BF0413;
-        padding: 0.25rem 0.60rem;
-        border: none;
-        margin: 0.313rem 1.25rem;
-        border-radius: .625rem;
-    }
-    .botonConoce button a{
+@media (max-width: 320px) {
+  .mainIndex {
+    background-color: black;
+    width: 320px;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-image: none;
+    color: white;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 4.5rem 19rem 4.125rem 4.125rem;
+    grid-template-areas: "item1" "titulo" "conoce" "redSo";
+    justify-content: center; }
+  .presentacionMia {
+    padding: 0.5rem 0rem 0rem 0rem; }
+    .presentacionMia div h1 {
+      background-color: black;
+      margin: 0rem;
+      font-size: 3rem;
+      padding: 0rem 1rem;
+      width: 20rem; }
+    .presentacionMia div h2 {
+      background-color: #BF0413;
+      width: 89%;
+      padding: 1.25rem;
+      margin: 1rem;
+      font-size: 1.1rem; }
+  .botonConoce {
+    grid-area: conoce;
+    display: flex;
+    align-items: start;
+    justify-content: right;
+    padding: 1rem 1rem 0rem 0rem; }
+    .botonConoce button {
+      background-color: #BF0413;
+      padding: 0.25rem 0.60rem;
+      border: none;
+      margin: 0.313rem 1.25rem;
+      border-radius: .625rem; }
+      .botonConoce button a {
         text-decoration: none;
         color: white;
         font-family: 'Roboto', sans-serif;
-        font-size: .875rem;
-    }
-    main section{
-        padding: 0.5rem 0rem 0rem 0rem;
-    }
-    .mainIndex section ul{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 0rem;
-        gap: 2.125rem;
-    }
-    .mainIndex section ul li a{
-        width: .625rem;
-    }
-    .vacio{
-        background-image: url(../assets/img/fondo-pro.jpg);
-        width: 100%;
-        background-size: 100%;
-        background-position-y: 90%;
-        background-repeat: no-repeat;
-    }
-    
-    main section{
-        padding: 0rem;
-    }
-    .mainSobreMi section div h2{
-        font-size: 1rem;
-        padding: 1rem;
-    }
-    .imagenesSobreMi img{
-        height: 11.75rem;
-    }
-    .tituloUno div h3{
-        font-size: .875rem;
-    }
-    .tituloDos div h3{
-        font-size: .875rem;
-    }
-    .tituloTres div h3{
-        font-size: .875rem;
-    }
-
-    .tipoK div h2{
-        background-color: #BF0413;
-        width: 70%;
-        padding: 1.25rem;
-        margin: 0rem 2rem;
-        font-size: 1.3rem;
-    }
-    .secMockup div h2{
-        background-color: #BF0413;
-        width: 45%;
-        padding: 1.25rem;
-        margin: 0rem 2rem;
-        font-size: 1.3rem;
-    }
-    .imgProyecto{
-        width: 100%;
-        padding: 2rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 12.625rem 10.625rem;
-        grid-template-areas: 
-        "img1"
-        "img2"
-        "img3" 
-        "img4";
-        justify-content: center;
-        align-items: center;
-    }
-    .mockup1{
-        width: 100%;
-    }
-    .mockup3{
-        height: auto;
-    }
-
-    .mainProyectos{
-        padding: 3.5rem 1rem;
-    }
-    .mainProyectos section div h2{
-        width: 82%;
-        margin: 0rem 1.5rem;
-    }
-    main section div h2{
-        padding: 1rem;
-        font-size: 1.25rem;
-    }
-    .mainProyectos section div p{
-        margin: 1rem 1rem;
-        font-size: .75rem;
-    }
-    .misProyectos div h2{
-        padding: 1rem;
-        font-size: 1rem;
-    }
-    article{
-        width: 25rem;
-        height: 20.4rem;
-    }
-    article div{
-        height: 8.75rem;
-    }
-    .cardContenedor article h3{
-        font-size: .875rem;
-    }
-    .cardContenedor article p{
-        font-size: .75rem;
-    }
-}
+        font-size: .875rem; }
+  main section {
+    padding: 0.5rem 0rem 0rem 0rem; }
+  .mainIndex section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    gap: 2.125rem; }
+    .mainIndex section ul li a {
+      width: .625rem; }
+  .vacio {
+    background-image: url(../assets/img/fondo-pro.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-position-y: 90%;
+    background-repeat: no-repeat; }
+  main section {
+    padding: 0rem; }
+  .mainSobreMi section div h2 {
+    font-size: 1rem;
+    padding: 1rem; }
+  .imagenesSobreMi img {
+    height: 11.75rem; }
+  .tituloUno div h3, .tituloDos div h3, .tituloTres div h3 {
+    font-size: .875rem; }
+  .tipoK div h2 {
+    background-color: #BF0413;
+    width: 70%;
+    padding: 1.25rem;
+    margin: 0rem 2rem;
+    font-size: 1.3rem; }
+  .secMockup div h2 {
+    background-color: #BF0413;
+    width: 45%;
+    padding: 1.25rem;
+    margin: 0rem 2rem;
+    font-size: 1.3rem; }
+  .imgProyecto {
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 12.625rem 10.625rem;
+    grid-template-areas: "img1" "img2" "img3" "img4";
+    justify-content: center;
+    align-items: center; }
+  .mockup1 {
+    width: 100%; }
+  .mockup3 {
+    height: auto; }
+  .mainProyectos {
+    padding: 3.5rem 1rem; }
+    .mainProyectos section div h2 {
+      width: 82%;
+      margin: 0rem 1.5rem; }
+  main section div h2 {
+    padding: 1rem;
+    font-size: 1.25rem; }
+  .mainProyectos section div p {
+    margin: 1rem 1rem;
+    font-size: .75rem; }
+  .misProyectos div h2 {
+    padding: 1rem;
+    font-size: 1rem; }
+  article {
+    width: 25rem;
+    height: 20.4rem; }
+    article div {
+      height: 8.75rem; }
+  .cardContenedor article h3 {
+    font-size: .875rem; }
+  .cardContenedor article p {
+    font-size: .75rem; } }
