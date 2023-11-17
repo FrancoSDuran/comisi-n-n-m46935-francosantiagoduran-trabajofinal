@@ -942,6 +942,18 @@ footer section div a img{
     .texto{
         height: 11.75rem;
     }
+    footer{
+        height: 100%;
+    }
+    footer section{
+        flex-direction: column;
+    }
+    .logoPie{
+        text-align: center;
+    }
+    .redesSociales{
+        padding: 0rem 0rem 1rem 0rem;
+    }
 }
 
 @media(max-width:320px){
