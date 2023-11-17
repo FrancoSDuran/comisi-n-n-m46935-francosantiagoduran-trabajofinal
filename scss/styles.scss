@@ -918,6 +918,31 @@
       object-fit: cover;
       height: 20.75rem;
     }
+    .tipoK {
+        padding: 0rem 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        div {
+          h2 {
+            background-color: #BF0413;
+            width: 55%;
+            padding: 1.25rem;
+            margin: 0rem;
+          }
+    
+          p {
+            padding: 2rem 0rem;
+            font-size: .875rem;
+          }
+    
+          img {
+            width: 100%;
+            padding: 0rem;
+          }
+        }
+      }
   }
   
   @media (max-width: 390px) {
