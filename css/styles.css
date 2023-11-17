@@ -112,7 +112,7 @@ grid-area: item1;
 }
 
 .mainSobreMi{
-    background-color: #262626;
+    background-color: black;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -193,7 +193,7 @@ grid-area: item1;
     margin: 0rem 3.5rem;
 }
 main{
-    background-color: #262626;
+    background-color: black;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     color: white;
