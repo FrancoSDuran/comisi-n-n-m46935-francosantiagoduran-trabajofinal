@@ -537,6 +537,87 @@ footer section div a img{
         margin: 0rem 3rem;
     }
 
+    .botonAtras{
+        padding: 0rem 2rem 0rem;
+    }
+    .botonAtras button {
+        padding: 1rem 0rem;
+    }
+    .tituloKamila{
+        padding: 0rem 2rem 0rem;
+    }
+    .tituloKamila div h1{
+        padding: 0rem 2rem;
+    }
+    .tituloKamila div p{
+        padding: 2rem 3rem;
+        font-size: .875rem;
+        line-height: 1.375rem;
+    }
+    .paletaColor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 3rem 0rem;
+    }
+    .paletaColor div h2{
+        background-color: #BF0413;
+        width: 70%;
+        padding: 1.25rem;
+        margin: 0rem 3rem;
+        font-size: 1.75rem;
+    }
+    .paletaColor div p{
+        padding: 2rem 3rem;
+        font-size: .875rem;
+    }
+    .paletaColor div img{
+        padding: 0rem;
+        width: 70%;
+    }
+    .imgProyecto1{
+        text-align: center;
+    }
+    .imgProyecto1 img{
+        width: 70%;
+        padding: 0rem;
+    }
+    .tipoK{
+        padding: 0rem 3rem 0rem;
+    }
+    .tipoK div h2{
+        background-color: #BF0413;
+        width: 70%;
+        padding: 1.25rem;
+        margin: 0rem 3rem;
+        font-size: 1.75rem;
+    }
+    .tipoK div p{
+        padding: 2rem 3rem;
+        font-size: .875rem;
+    }
+    .logoK{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 0rem 3rem 0rem;
+    }
+    .logoK div h2{
+        background-color: #BF0413;
+        width: 20%;
+        padding: 1.25rem;
+        margin: 0rem 3rem;
+        font-size: 1.75rem;
+    }
+    .logoK div p{
+        padding: 2rem 3rem;
+        font-size: .875rem;
+    }
+    .logoK div img{
+        padding: 0rem;
+        width: 70%;
+    }
+
     .mainContacto{
         padding: 2rem 1rem;
     }
@@ -709,6 +790,108 @@ footer section div a img{
         padding: 0rem;
     }
 
+    .botonAtras{
+        padding: 0rem 2rem 2rem;
+    }
+    .botonAtras button {
+        padding: 0.5rem 0rem;
+    }
+    .tituloKamila div h1{
+        padding: 0rem;
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+    }
+    .tituloKamila div p{
+        padding: 2rem 0rem;
+        font-size: .875rem;
+        line-height: 1.375rem;
+    }
+    .paletaColor div h2{
+        background-color: #BF0413;
+        width: 70%;
+        padding: 1.25rem;
+        margin: 0rem 2rem;
+        font-size: 1.3rem;
+    }
+    .paletaColor div p{
+        padding: 2rem 2rem;
+        font-size: .875rem;
+    }
+    .paletaColor div img{
+        padding: 0rem;
+        width: 70%;
+    }
+    .imgProyecto1{
+        text-align: center;
+    }
+    .imgProyecto1 img{
+        width: 70%;
+        padding: 0rem;
+    }
+    .tipoK{
+        padding: 0rem 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tipoK div h2{
+        background-color: #BF0413;
+        width: 55%;
+        padding: 1.25rem;
+        margin: 0rem;
+        font-size: 1.3rem;
+    }
+    .tipoK div p{
+        padding: 2rem 0rem;
+        font-size: .875rem;
+    }
+    .tipoK div img{
+        width: 100%;
+        padding: 0rem;
+    }
+    .logoK div h2{
+        background-color: #BF0413;
+        width: 35%;
+        padding: 1.25rem;
+        margin: 0rem 2rem;
+        font-size: 1.3rem;
+    }
+    .logoK div p{
+        padding: 2rem 2rem;
+        font-size: .875rem;
+    }
+    .logoK div img{
+        padding: 0rem;
+        width: 70%;
+    }
+    .secMockup div h2{
+        background-color: #BF0413;
+        width: 35%;
+        padding: 1.25rem;
+        margin: 0rem 2rem;
+        font-size: 1.3rem;
+    }
+    .imgProyecto{
+        width: 100%;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 16.625rem 13.625rem;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3" 
+        "img4";
+        justify-content: center;
+        align-items: center;
+    }
+    .mockup1{
+        width: 100%;
+    }
+    .mockup3{
+        height: auto;
+    }
+
     .mainProyectos{
         padding: 3.5rem 1rem;
     }
@@ -858,6 +1041,41 @@ footer section div a img{
     }
     .tituloTres div h3{
         font-size: .875rem;
+    }
+
+    .tipoK div h2{
+        background-color: #BF0413;
+        width: 70%;
+        padding: 1.25rem;
+        margin: 0rem 2rem;
+        font-size: 1.3rem;
+    }
+    .secMockup div h2{
+        background-color: #BF0413;
+        width: 45%;
+        padding: 1.25rem;
+        margin: 0rem 2rem;
+        font-size: 1.3rem;
+    }
+    .imgProyecto{
+        width: 100%;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 12.625rem 10.625rem;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3" 
+        "img4";
+        justify-content: center;
+        align-items: center;
+    }
+    .mockup1{
+        width: 100%;
+    }
+    .mockup3{
+        height: auto;
     }
 
     .mainProyectos{
