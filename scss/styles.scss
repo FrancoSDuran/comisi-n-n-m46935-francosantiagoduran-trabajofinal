@@ -285,7 +285,7 @@
     width: 100%;
   }
   
-  .mainProyectos section div p {
+  .proyectoTitular p {
     margin: 0rem 3.5rem;
   }
   
@@ -342,7 +342,7 @@
   
   article {
     width: 25rem;
-    height: 29.6875rem;
+    height: 31.25rem;
     background-color: white;
     margin: 40px;
     border-radius: .625rem;
@@ -354,44 +354,47 @@
       width: 100%;
       height: 18.75rem;
       object-fit: contain;
-  
-      img {
-        width: 100%;
-        height: 100%;
-      }
+    
+    
     }
   
-    button {
+    .btn {
       background-color: #BF0413;
       font-family: 'Roboto', sans-serif;
       padding: .625rem 1.875rem;
       border: none;
       margin: .3125rem 1.25rem;
       border-radius: .625rem;
-  
-      a {
-        text-decoration: none;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: medium;
-      }
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      font-size: medium;
+    }
+    .btn:hover {
+      color: var(--bs-btn-hover-color);
+      background-color: #000;
+      border-color: var(--bs-btn-hover-border-color);
+    }
+    a:hover {
+      --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
     }
   }
   
+  
   .cardContenedor {
     article {
-      h3 {
+      h5 {
         font-family: 'Roboto', sans-serif;
         padding: .3125rem;
-        margin: .25rem;
         background-color: black;
         color: white;
+        text-align: center;
       }
   
       p {
         font-family: 'Roboto', sans-serif;
         padding: .1875rem;
         margin: .25rem;
+        line-height: 1.125rem;
       }
     }
   
@@ -700,7 +703,7 @@
         }
   
         p {
-          margin: 0rem 3rem;
+          margin: 0rem 0rem;
         }
       }
     }
@@ -843,7 +846,47 @@
       }
     }
   }
-  
+
+  @media (max-width: 717px){
+  .presentacionMia div {
+    h1 {
+      font-size: 5rem;
+      margin: 0rem 0rem 0rem 2rem;
+    }
+  }
+  }
+
+  @media (max-width: 657px){
+    .mainIndex {
+      background-position: -47%;
+      background-size: 150%;
+      grid-template-rows: 14rem 29rem 16.7rem;
+    }
+    .presentacionMia div {
+      h1 {
+        font-size: 5rem;
+        margin: 0rem 0rem 0rem 2rem;
+      }
+    }
+    }
+
+    @media (max-width: 627px){
+      .presentacionMia div {
+        h1 {
+          font-size: 4.5rem;
+          margin: 0rem 0rem 0rem 2rem;
+        }
+    
+        h2 {
+        background-color: #BF0413;
+        width: 88%;
+        padding: 1.25rem;
+        margin: 1rem;
+        font-size: 1.5rem;
+      }
+      }
+      }
+
   @media (max-width: 1100px) {
     .mainSobreMi section div h2 {
       background-color: #BF0413;
@@ -1083,11 +1126,7 @@
     }
     article {
         width: 25rem;
-        height: 26.6875rem;
-    
-        div {
-          height: 13.75rem;
-        }
+        height: 27.25rem;
       }
 }
   @media (max-width: 390px) {
@@ -1398,23 +1437,19 @@
     main section div h2 {
       font-size: 1.5rem;
     }
-  
+
     .mainProyectos section div p {
-      margin: 1rem 3rem;
+    
       font-size: .75rem;
     }
   
     article {
       width: 25rem;
-      height: 23.6875rem;
-  
-      div {
-        height: 12.75rem;
-      }
+      height: 25.688rem;
     }
   
     .cardContenedor article {
-      h3 {
+      h5 {
         font-size: 1rem;
       }
   
@@ -1623,7 +1658,7 @@
     }
   
     .mainProyectos section div p {
-      margin: 1rem 1rem;
+
       font-size: .75rem;
     }
   
@@ -1634,15 +1669,17 @@
   
     article {
       width: 25rem;
-      height: 20.4rem;
+      height: 26rem;
   
-      div {
-        height: 8.75rem;
+      .btn {
+        padding: .375rem .875rem;
+        margin: 0.313rem 0.25rem;
+        font-weight: 500;
       }
     }
   
     .cardContenedor article {
-      h3 {
+      h5 {
         font-size: .875rem;
       }
   
@@ -1650,4 +1687,11 @@
         font-size: .75rem;
       }
     }
+
+    .btn {
+      padding: -0.375rem 1.875rem;
+      margin: 0.313rem 0.25rem;
+      font-weight: 500;
+    }
+  
   }

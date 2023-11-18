@@ -214,7 +214,7 @@ nav #toggle, nav label {
 .imagenesSobreMi img {
   width: 100%; }
 
-.mainProyectos section div p {
+.proyectoTitular p {
   margin: 0rem 3.5rem; }
 
 main {
@@ -255,7 +255,7 @@ main {
 
 article {
   width: 25rem;
-  height: 29.6875rem;
+  height: 31.25rem;
   background-color: white;
   margin: 40px;
   border-radius: .625rem;
@@ -266,21 +266,22 @@ article {
     width: 100%;
     height: 18.75rem;
     object-fit: contain; }
-    article div img {
-      width: 100%;
-      height: 100%; }
-  article button {
+  article .btn {
     background-color: #BF0413;
     font-family: 'Roboto', sans-serif;
     padding: .625rem 1.875rem;
     border: none;
     margin: .3125rem 1.25rem;
-    border-radius: .625rem; }
-    article button a {
-      text-decoration: none;
-      color: white;
-      font-family: 'Roboto', sans-serif;
-      font-size: medium; }
+    border-radius: .625rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: medium; }
+  article .btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #000;
+    border-color: var(--bs-btn-hover-border-color); }
+  article a:hover {
+    --bs-link-color-rgb: var(--bs-link-hover-color-rgb); }
 
 .cardContenedor {
   display: flex;
@@ -289,16 +290,17 @@ article {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
-  .cardContenedor article h3 {
+  .cardContenedor article h5 {
     font-family: 'Roboto', sans-serif;
     padding: .3125rem;
-    margin: .25rem;
     background-color: black;
-    color: white; }
+    color: white;
+    text-align: center; }
   .cardContenedor article p {
     font-family: 'Roboto', sans-serif;
     padding: .1875rem;
-    margin: .25rem; }
+    margin: .25rem;
+    line-height: 1.125rem; }
 
 .tituloKamila div h1 {
   padding: 0rem 0rem 0rem 3.5rem; }
@@ -521,7 +523,7 @@ footer section div a img {
     .mainProyectos section div h2 {
       width: 80%; }
     .mainProyectos section div p {
-      margin: 0rem 3rem; }
+      margin: 0rem 0rem; }
   .botonAtras {
     padding: 0rem 2rem 0rem; }
     .botonAtras button {
@@ -600,6 +602,31 @@ footer section div a img {
       font-size: 1rem; }
     .contactaMe form input {
       margin: .625rem 0rem 1.25rem; } }
+
+@media (max-width: 717px) {
+  .presentacionMia div h1 {
+    font-size: 5rem;
+    margin: 0rem 0rem 0rem 2rem; } }
+
+@media (max-width: 657px) {
+  .mainIndex {
+    background-position: -47%;
+    background-size: 150%;
+    grid-template-rows: 14rem 29rem 16.7rem; }
+  .presentacionMia div h1 {
+    font-size: 5rem;
+    margin: 0rem 0rem 0rem 2rem; } }
+
+@media (max-width: 627px) {
+  .presentacionMia div h1 {
+    font-size: 4.5rem;
+    margin: 0rem 0rem 0rem 2rem; }
+  .presentacionMia div h2 {
+    background-color: #BF0413;
+    width: 88%;
+    padding: 1.25rem;
+    margin: 1rem;
+    font-size: 1.5rem; } }
 
 @media (max-width: 1100px) {
   .mainSobreMi section div h2 {
@@ -758,9 +785,7 @@ footer section div a img {
     font-size: 1.7rem; }
   article {
     width: 25rem;
-    height: 26.6875rem; }
-    article div {
-      height: 13.75rem; } }
+    height: 27.25rem; } }
 
 @media (max-width: 390px) {
   header nav {
@@ -964,14 +989,11 @@ footer section div a img {
   main section div h2 {
     font-size: 1.5rem; }
   .mainProyectos section div p {
-    margin: 1rem 3rem;
     font-size: .75rem; }
   article {
     width: 25rem;
-    height: 23.6875rem; }
-    article div {
-      height: 12.75rem; }
-  .cardContenedor article h3 {
+    height: 25.688rem; }
+  .cardContenedor article h5 {
     font-size: 1rem; }
   .cardContenedor article p {
     font-size: .75rem; }
@@ -1105,17 +1127,22 @@ footer section div a img {
     padding: 1rem;
     font-size: 1.25rem; }
   .mainProyectos section div p {
-    margin: 1rem 1rem;
     font-size: .75rem; }
   .misProyectos div h2 {
     padding: 1rem;
     font-size: 1rem; }
   article {
     width: 25rem;
-    height: 20.4rem; }
-    article div {
-      height: 8.75rem; }
-  .cardContenedor article h3 {
+    height: 26rem; }
+    article .btn {
+      padding: .375rem .875rem;
+      margin: 0.313rem 0.25rem;
+      font-weight: 500; }
+  .cardContenedor article h5 {
     font-size: .875rem; }
   .cardContenedor article p {
-    font-size: .75rem; } }
+    font-size: .75rem; }
+  .btn {
+    padding: -0.375rem 1.875rem;
+    margin: 0.313rem 0.25rem;
+    font-weight: 500; } }
